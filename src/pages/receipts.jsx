@@ -33,7 +33,7 @@ class Receipts extends Component {
     addEntry = () => {
         if (this.state.receipts.length < 5) {
             let receipts = [...this.state.receipts];
-            receipts.push(this.state.receiptTemplate);
+            receipts.push({...this.state.receiptTemplate});
             this.setState({receipts: receipts});
         }
     }

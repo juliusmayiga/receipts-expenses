@@ -4,6 +4,7 @@ const ReceiptEntry = (props) =>  {
     let supportedCurrenciesOptions = props.supportedCurrencies.map(function (currency, index) {
         return <option key={index} value={currency}>{currency}</option>
     });
+
     return (
         <div>
             <input type="text"
@@ -13,7 +14,7 @@ const ReceiptEntry = (props) =>  {
                    onChange={(event) => props.onChange(event, props.index, 'description')}/>
 
             <input type="number"
-                   name={"receipt[" + props.index + "]['ammount']"}
+                   name={"receipt[" + props.index + "]['amount']"}
                    value={props.data.amount}
                    placeholder="Amount"
                    onChange={(event) => props.onChange(event, props.index, 'amount')}/>

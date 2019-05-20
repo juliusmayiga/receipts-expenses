@@ -5,9 +5,46 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+    background: #f6f6f6;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+.title {
+    padding: 0px;
+    margin: 0px 0px 10px 0px;
+}
+
+.form-container {
+    margin: 20px auto;
+    max-width: 500px;
+    border: solid #dfdfdf 1px;
+    background: #ffffff;
+    padding: 20px;
+}
+
+.button {
+    padding: 10px 30px;
+}
+
+.receipt-entry {
+    margin: 0px 0px 10px 0px;
+}
+
+.left-inline-block,
+.right-inline-block{
+    display: inline-block;
+    margin-left: 20px;
+}
+
+.right-inline-block {
+    float: right;
+}
+
+.top-right-container {
+    float: right;
+    margin-top: 13px;
 }
